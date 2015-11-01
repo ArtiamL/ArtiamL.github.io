@@ -1,0 +1,41 @@
+/*
+		Author: Luke Newell (@Myzostal)
+		Created: 07/10/2015
+		Updated: 01/11/2015
+*/
+body {
+  color: white;
+  overflow-x: hidden;
+  background: #ecf0f1;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-weight: 300; }
+
+img {
+  max-width: 100%; }
+
+#angularName {
+  position: absolute;
+  top: 50em;
+  left: 5em;
+  padding: 0.5em;
+  min-width: 10em;
+  max-width: 15em;
+  min-height: 5em;
+  font-size: 1.5em;
+  color: #333;
+  background: #dedfdf; }
+  #angularName h1 {
+    font-size: 2em; }
+  #angularName hr {
+    border: 0;
+    border-top: 1px solid #ecf0f1;
+    border-bottom: 1px solid #ecf0f1; }
+  #angularName input {
+    height: 1.5em;
+    min-width: inherit;
+    padding-left: 0.5em;
+    font-size: 0.5em;
+    border-radius: 3px;
+    border: 1px solid #cccccc; }
+
+/*# sourceMappingURL=index.css.map */
