@@ -2,7 +2,7 @@
 
 **If you see any errors in the JavaScript, feel free to change and update it.**
 
-## If you wish to commit, please follow these guidelines:
+## If you wish to contribute, please follow these guidelines:
 
 ### Author Comment:
 The **Author Comment** is a comment at the beginning of every editable file in this Repository. It signifies the original author of the file and the date of the file's creation, along with the name of the last person to update the file, and the date of the last update. The format is as follows (shown in the **CSS** styling):
