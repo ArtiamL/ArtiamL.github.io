@@ -2,6 +2,8 @@
 
 **If you see any errors in the JavaScript, feel free to change and update it.**
 
+---
+
 ### If you wish to contribute, please follow these guidelines:
 
 #### Author Comment:
@@ -21,5 +23,7 @@ This must be updated regularly, as it helps maintain the files in an easy and or
 
 #### SCSS:
 The styling for this website was written in, and is being maintained in, **SCSS**. I would require any stylesheets created or edited to be done using the **SCSS** syntax and file extension, to be compiled into **CSS** before _commiting_ and _pushing_.
+
+---
 
 ### Other than that, welcome to the Repository, and have fun!
