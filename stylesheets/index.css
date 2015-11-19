@@ -5,11 +5,12 @@
         Updated By: Luke Newell (@Myzostal)
 		Updated: 01/11/2015
 */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 html {
   color: white;
   overflow-x: hidden;
   background: #ecf0f1;
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
 
 img {

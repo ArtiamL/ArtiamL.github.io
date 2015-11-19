@@ -13,46 +13,65 @@ a {
   color: inherit; }
 
 #menuIcon {
-  width: 3em;
-  margin: 1.5em;
+  width: 3rem;
+  margin: 1.5rem;
   z-index: 2000;
   position: fixed;
   cursor: pointer; }
   #menuIcon .menuLines {
-    background: #1A1F29;
-    width: 3em;
-    height: 0.2em;
+    background-color: #1A1F29;
+    width: 3rem;
+    height: 0.2rem;
     -webkit-transform-origin: left;
     transform-origin: left; }
   #menuIcon #line2, #menuIcon #line3 {
     margin-top: 5px; }
   #menuIcon #line2 {
-    height: 0.19em; }
+    height: 0.19rem; }
   #menuIcon #line3 {
-    height: 0.18em; }
+    height: 0.19rem; }
 
 .menu {
   background: #1A1F29;
-  height: 100vh;
-  width: 16em;
-  left: -16em;
+  height: 101vh;
+  width: 100%;
   position: fixed;
   overflow: hidden;
-  z-index: -1000; }
+  z-index: 1000;
+  opacity: 0; }
   .menu #home {
     margin-top: 20%; }
   .menu .menuItems {
-    color: #4B5975;
-    font-size: 2.5em;
-    font-weight: 300;
-    padding: 0.2em;
-    padding-left: 1em;
-    transition: 0.25s; }
-  .menu .menuItems:hover {
-    color: #1A1F29;
-    background: #4B5975;
-    transition: 0.25s; }
-  @media screen and (min-width: 40.5em) {
+    display: block; }
+    .menu .menuItems a {
+      display: block;
+      padding: 1rem;
+      color: white;
+      background-color: #202633;
+      font-size: 2.5rem;
+      font-weight: 300;
+      width: 84%;
+      margin-top: 4%;
+      margin-left: auto;
+      margin-right: auto;
+      transition: 250ms; }
+    .menu .menuItems #desc {
+      font-size: 1.25rem;
+      opacity: 0.5; }
+  @media screen and (orientation: landscape) {
+    .menu .menuItems {
+      display: inline-block; }
+      .menu .menuItems a {
+        display: inline-block;
+        width: 58%;
+        margin-left: 2%; }
+      .menu .menuItems #aHome {
+        margin-top: -35%; }
+      .menu .menuItems #aWeb {
+        margin-left: -20%; } }
+  @media screen and (min-width: 40.5rem) {
+    .menu a {
+      margin-left: 7.5%; }
     .menu #bottomItem {
       margin-bottom: 160%; } }
 
