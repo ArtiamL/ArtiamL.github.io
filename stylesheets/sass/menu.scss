@@ -54,17 +54,17 @@ a{
 	position: fixed;
 	overflow: hidden;
 	z-index: 1000;
-	opacity: 0;
+	display: none;
 
 	#home{
 		margin-top: 20%;
 	}
 
     .menuItems{
-		display: block;
+		// display: block;
 
 		a{
-			display: block;
+			// display: block;
 			padding: 1rem;
 			color: white; //#4B5975;
 			background-color: $menuItemsBack;
@@ -87,7 +87,6 @@ a{
 		.menuItems{
 			display: inline-block;
 			a{
-				display: inline-block;
 				width: 58%;
 				margin-left: 2%;
 			}
@@ -102,6 +101,10 @@ a{
 
 			#aGames{
 
+			}
+
+			#aAbout{
+				width: 120%;
 			}
 		}
 	}

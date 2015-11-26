@@ -40,8 +40,14 @@ function openMenu(){
 		transition: '500ms'
 	});*/
 
-	TweenMax.to('.menu', 0.5, {'opacity': '1'});
-	TweenMax.to('.menuLines', 0.5, {'background-color': '#ecf0f1'});
+	$('.menu').fadeIn(500);
+	$('.menuItems, .menuItems a').css({
+		display: 'block'
+	});
+	// $('.menuLines').fadeIn(500);
+
+	// TweenMax.to('.menu', 0.5, {'display': 'block', 'opacity': '1'});
+	// TweenMax.to('.menuLines', 0.5, {'background-color': '#ecf0f1'});
 
 	// TweenMax.to('#menuIcon', 0.5, {left: '16em'})
 	// TweenMax.to('.menu', 0.5, {left: '0em'});
@@ -80,8 +86,13 @@ function closeMenu(){
 		transition: '500ms'
 	});*/
 
-	TweenMax.to('.menu', 0.5, {'opacity': '0'});
-	TweenMax.to('.menuLines', 0.5, {'background-color': '#1A1F29'});
+	$('.menu').fadeOut(500);
+	$('.menuItems, .menuItems a').css({
+		display: 'none'
+	});
+
+	// TweenMax.to('.menu', 0.5, {'display': 'none', 'opacity': '0'});
+	// TweenMax.to('.menuLines', 0.5, {'background-color': '#1A1F29'});
 
 	// TweenMax.to('#menuIcon', 0.5, {left: '0em'})
 	// TweenMax.to('.menu', 0.5, {left: '-16em'});

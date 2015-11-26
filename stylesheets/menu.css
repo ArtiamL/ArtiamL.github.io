@@ -38,37 +38,35 @@ a {
   position: fixed;
   overflow: hidden;
   z-index: 1000;
-  opacity: 0; }
+  display: none; }
   .menu #home {
     margin-top: 20%; }
-  .menu .menuItems {
-    display: block; }
-    .menu .menuItems a {
-      display: block;
-      padding: 1rem;
-      color: white;
-      background-color: #202633;
-      font-size: 2.5rem;
-      font-weight: 300;
-      width: 84%;
-      margin-top: 4%;
-      margin-left: auto;
-      margin-right: auto;
-      transition: 250ms; }
-    .menu .menuItems #desc {
-      font-size: 1.25rem;
-      opacity: 0.5; }
+  .menu .menuItems a {
+    padding: 1rem;
+    color: white;
+    background-color: #202633;
+    font-size: 2.5rem;
+    font-weight: 300;
+    width: 84%;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 250ms; }
+  .menu .menuItems #desc {
+    font-size: 1.25rem;
+    opacity: 0.5; }
   @media screen and (orientation: landscape) {
     .menu .menuItems {
       display: inline-block; }
       .menu .menuItems a {
-        display: inline-block;
         width: 58%;
         margin-left: 2%; }
       .menu .menuItems #aHome {
         margin-top: -35%; }
       .menu .menuItems #aWeb {
-        margin-left: -20%; } }
+        margin-left: -20%; }
+      .menu .menuItems #aAbout {
+        width: 120%; } }
   @media screen and (min-width: 40.5rem) {
     .menu a {
       margin-left: 7.5%; }
