@@ -6,30 +6,37 @@
 		Updated: 01/11/2015
 */
 body {
-  background: #ecf0f1; }
+  background: #ecf0f1;
+}
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+}
 
 #menuIcon {
   width: 3rem;
   margin: 1.5rem;
   z-index: 2000;
   position: fixed;
-  cursor: pointer; }
-  #menuIcon .menuLines {
-    background-color: #1A1F29;
-    width: 3rem;
-    height: 0.2rem;
-    -webkit-transform-origin: left;
-    transform-origin: left; }
-  #menuIcon #line2, #menuIcon #line3 {
-    margin-top: 5px; }
-  #menuIcon #line2 {
-    height: 0.19rem; }
-  #menuIcon #line3 {
-    height: 0.19rem; }
+  cursor: pointer;
+}
+#menuIcon .menuLines {
+  background-color: #1A1F29;
+  width: 3rem;
+  height: 0.2rem;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+}
+#menuIcon #line2, #menuIcon #line3 {
+  margin-top: 5px;
+}
+#menuIcon #line2 {
+  height: 0.19rem;
+}
+#menuIcon #line3 {
+  height: 0.19rem;
+}
 
 .menu {
   background: #1A1F29;
@@ -38,39 +45,50 @@ a {
   position: fixed;
   overflow: hidden;
   z-index: 1000;
-  display: none; }
-  .menu #home {
-    margin-top: 20%; }
+  display: none;
+}
+.menu #home {
+  margin-top: 20%;
+}
+.menu .menuItems a {
+  padding: 1rem;
+  color: white;
+  background-color: #202633;
+  font-size: 2.5rem;
+  font-weight: 300;
+  width: 84%;
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 250ms;
+}
+.menu .menuItems #desc {
+  font-size: 1.25rem;
+  opacity: 0.5;
+}
+@media screen and (orientation: landscape) {
+  .menu .menuItems {
+    display: inline-block;
+  }
   .menu .menuItems a {
-    padding: 1rem;
-    color: white;
-    background-color: #202633;
-    font-size: 2.5rem;
-    font-weight: 300;
-    width: 84%;
-    margin-top: 4%;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 250ms; }
-  .menu .menuItems #desc {
-    font-size: 1.25rem;
-    opacity: 0.5; }
-  @media screen and (orientation: landscape) {
-    .menu .menuItems {
-      display: inline-block; }
-      .menu .menuItems a {
-        width: 58%;
-        margin-left: 2%; }
-      .menu .menuItems #aHome {
-        margin-top: -35%; }
-      .menu .menuItems #aWeb {
-        margin-left: -20%; }
-      .menu .menuItems #aAbout {
-        width: 120%; } }
-  @media screen and (min-width: 40.5rem) {
-    .menu a {
-      margin-left: 7.5%; }
-    .menu #bottomItem {
-      margin-bottom: 160%; } }
-
-/*# sourceMappingURL=menu.css.map */
+    width: 58%;
+    margin-left: 2%;
+  }
+  .menu .menuItems #aHome {
+    margin-top: -35%;
+  }
+  .menu .menuItems #aWeb {
+    margin-left: -20%;
+  }
+  .menu .menuItems #aAbout {
+    width: 120%;
+  }
+}
+@media screen and (min-width: 40.5rem) {
+  .menu a {
+    margin-left: 7.5%;
+  }
+  .menu #bottomItem {
+    margin-bottom: 160%;
+  }
+}

@@ -11,10 +11,12 @@ html {
   overflow-x: hidden;
   background: #ecf0f1;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 #angularName {
   position: absolute;
@@ -26,19 +28,21 @@ img {
   min-height: 5em;
   font-size: 1.5em;
   color: #333;
-  background: #dedfdf; }
-  #angularName h1 {
-    font-size: 2em; }
-  #angularName hr {
-    border: 0;
-    border-top: 1px solid #ecf0f1;
-    border-bottom: 1px solid #ecf0f1; }
-  #angularName input {
-    height: 1.5em;
-    min-width: inherit;
-    padding-left: 0.5em;
-    font-size: 0.5em;
-    border-radius: 3px;
-    border: 1px solid #cccccc; }
-
-/*# sourceMappingURL=index.css.map */
+  background: #dedfdf;
+}
+#angularName h1 {
+  font-size: 2em;
+}
+#angularName hr {
+  border: 0;
+  border-top: 1px solid #ecf0f1;
+  border-bottom: 1px solid #ecf0f1;
+}
+#angularName input {
+  height: 1.5em;
+  min-width: inherit;
+  padding-left: 0.5em;
+  font-size: 0.5em;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+}
