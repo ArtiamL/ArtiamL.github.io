@@ -7,8 +7,9 @@
 */
 
 $backgroundColor: #ecf0f1;
-$menuColor: #9E1E11; //#ffcc00; //#FFA400; //#9E1E11; //#38201E; //#1A1F29;
-$menuItemsBack: #202633;
+$menuLinesColor: #9E1E11; //#ffcc00; //#FFA400; //#9E1E11; //#38201E; //#1A1F29;
+// $menuItemsBack: #202633;
+$menuBackground: #131e2b;
 
 *{
 	padding: 0;
@@ -37,7 +38,7 @@ a{
 	cursor: pointer;
 
     .menuLines{
-    	background-color: $menuColor;
+    	background-color: $menuLinesColor;
     	width: 3rem;
     	height: 0.2rem;
     	-webkit-transform-origin: left;
@@ -58,7 +59,7 @@ a{
 }
 
 .menu{
-	background: $menuColor;
+	background: $menuBackground;
 	height: 101vh;
 	width: 100%;
 	position: fixed;
@@ -77,7 +78,7 @@ a{
 			// display: block;
 			padding: 1rem;
 			color: white; //#4B5975;
-			background-color: $menuItemsBack;
+			background-color: $menuLinesColor;
 	    	font-size: 2.5rem;
 	    	font-weight: 300;
 			width: 84%;
