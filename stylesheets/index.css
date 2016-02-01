@@ -6,15 +6,6 @@
 		Updated: 01/11/2015
 */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
-* {
-  padding: 0;
-  margin: 0;
-  color: white;
-  overflow-x: hidden;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-}
-
 img {
   max-width: 100%;
 }
@@ -22,10 +13,9 @@ img {
 header {
   position: relative;
   z-index: 0;
-  color: white;
   height: 100vh;
   width: 100%;
-  background-color: #1A293A;
+  background: #131e2b;
   background-size: cover;
   background-position: center;
   margin-bottom: 8%;
@@ -40,6 +30,7 @@ header .initMessage {
   display: none;
 }
 header hr {
+  border: 1px solid #9E1E11;
   width: 10rem;
   margin-bottom: 0.625rem;
 }
@@ -48,6 +39,9 @@ header .about {
   width: 90%;
   margin: 0 auto;
   text-align: justify;
+}
+header .about .csharp {
+  color: #FFA400;
 }
 
 .text {

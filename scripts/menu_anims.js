@@ -92,7 +92,7 @@ function closeMenu(){
 	});
 
 	// TweenMax.to('.menu', 0.5, {'display': 'none', 'opacity': '0'});
-	TweenMax.to('.menuLines', 0.5, {'background-color': '#1A1F29'});
+	TweenMax.to('.menuLines', 0.5, {'background-color': '#9E1E11'});
 
 	// TweenMax.to('#menuIcon', 0.5, {left: '0em'})
 	// TweenMax.to('.menu', 0.5, {left: '-16em'});
@@ -118,6 +118,10 @@ function redirectPage(){
 $(document).ready(function(){
 	// menuToggle();
 
+	// $('#menuIcon').addEventListener('touchstart', function(e){
+	// 	e.preventDefault();
+	// 	TweenMax.to('.menuLines', 0.5, {'background-color': '#fff'});
+	// }, false);
 
 	$('#menuIcon').click(menuToggle);
 

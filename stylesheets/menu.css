@@ -5,6 +5,15 @@
         Updated By: Luke Newell (@Myzostal)
 		Updated: 01/11/2015
 */
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
 body {
   background: #ecf0f1;
 }
@@ -15,14 +24,15 @@ a {
 }
 
 #menuIcon {
-  width: 3rem;
+  min-width: 3rem;
+  min-height: 2rem;
   margin: 1.5rem;
   z-index: 2000;
   position: fixed;
   cursor: pointer;
 }
 #menuIcon .menuLines {
-  background-color: #1A1F29;
+  background-color: #9E1E11;
   width: 3rem;
   height: 0.2rem;
   -webkit-transform-origin: left;
@@ -39,7 +49,7 @@ a {
 }
 
 .menu {
-  background: #1A1F29;
+  background: #9E1E11;
   height: 101vh;
   width: 100%;
   position: fixed;
