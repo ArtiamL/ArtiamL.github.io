@@ -28,7 +28,7 @@ a {
   min-height: 2rem;
   margin: 1.5rem;
   z-index: 2000;
-  position: fixed;
+  position: absolute;
   cursor: pointer;
 }
 #menuIcon .menuLines {
@@ -49,56 +49,15 @@ a {
 }
 
 .menu {
-  background: #131e2b;
-  height: 101vh;
-  width: 100%;
-  position: fixed;
-  overflow: hidden;
-  z-index: 1000;
   display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.menu #home {
-  margin-top: 20%;
+.menu .menuItems {
+  font-size: 1.5rem;
 }
-.menu .menuItems a {
-  padding: 1rem;
-  color: white;
-  background-color: #9E1E11;
-  font-size: 2.5rem;
-  font-weight: 300;
-  width: 84%;
-  margin-top: 4%;
-  margin-left: auto;
-  margin-right: auto;
-  transition: 250ms;
-}
-.menu .menuItems #desc {
-  font-size: 1.25rem;
-  opacity: 0.5;
-}
-@media screen and (orientation: landscape) {
-  .menu .menuItems {
-    display: inline-block;
-  }
-  .menu .menuItems a {
-    width: 58%;
-    margin-left: 2%;
-  }
-  .menu .menuItems #aHome {
-    margin-top: -35%;
-  }
-  .menu .menuItems #aWeb {
-    margin-left: -20%;
-  }
-  .menu .menuItems #aAbout {
-    width: 120%;
-  }
-}
-@media screen and (min-width: 40.5rem) {
-  .menu a {
-    margin-left: 7.5%;
-  }
-  .menu #bottomItem {
-    margin-bottom: 160%;
-  }
+.menu #games, .menu #about {
+  float: right;
+  margin-top: -2.1rem;
 }

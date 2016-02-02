@@ -34,7 +34,7 @@ a{
 	min-height: 2rem;
 	margin: 1.5rem;
 	z-index: 2000;
-	position: fixed;
+	position: absolute;
 	cursor: pointer;
 
     .menuLines{
@@ -59,75 +59,92 @@ a{
 }
 
 .menu{
-	background: $menuBackground;
-	height: 101vh;
-	width: 100%;
-	position: fixed;
-	overflow: hidden;
-	z-index: 1000;
 	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 
-	#home{
-		margin-top: 20%;
+	.menuItems{
+		font-size: 1.5rem;
 	}
 
-    .menuItems{
-		// display: block;
-
-		a{
-			// display: block;
-			padding: 1rem;
-			color: white; //#4B5975;
-			background-color: $menuLinesColor;
-	    	font-size: 2.5rem;
-	    	font-weight: 300;
-			width: 84%;
-			margin-top: 4%;
-			margin-left: auto; margin-right: auto;
-	    	transition: 250ms;
-		}
-
-		#desc{
-			font-size: 1.25rem;
-			opacity: 0.5;
-		}
-    }
-
-	@media screen and (orientation: landscape) {
-		// overflow: scroll;
-		.menuItems{
-			display: inline-block;
-			a{
-				width: 58%;
-				margin-left: 2%;
-			}
-
-			#aHome{
-				margin-top: -35%;
-			}
-
-			#aWeb{
-				margin-left: -20%;
-			}
-
-			#aGames{
-
-			}
-
-			#aAbout{
-				width: 120%;
-			}
-		}
+	#games, #about{
+		float: right;
+		margin-top: -2.1rem; //margin-left: -0.5rem;
+		// display: inline-flex;
 	}
-
-    @media screen and (min-width: 40.5rem){
-		a{
-			margin-left: 7.5%;
-		}
-
-    	#bottomItem{
-    		margin-bottom: 160%;
-    	}
-    }
-
 }
+
+// .menu{
+// 	background: $menuBackground;
+// 	height: 101vh;
+// 	width: 100%;
+// 	position: fixed;
+// 	overflow: hidden;
+// 	z-index: 1000;
+// 	display: none;
+//
+// 	#home{
+// 		margin-top: 20%;
+// 	}
+//
+//     .menuItems{
+// 		// display: block;
+//
+// 		a{
+// 			// display: block;
+// 			padding: 1rem;
+// 			color: white; //#4B5975;
+// 			background-color: $menuLinesColor;
+// 	    	font-size: 2.5rem;
+// 	    	font-weight: 300;
+// 			width: 84%;
+// 			margin-top: 4%;
+// 			margin-left: auto; margin-right: auto;
+// 	    	transition: 250ms;
+// 		}
+//
+// 		#desc{
+// 			font-size: 1.25rem;
+// 			opacity: 0.5;
+// 		}
+//     }
+//
+// 	@media screen and (orientation: landscape) {
+// 		// overflow: scroll;
+// 		.menuItems{
+// 			display: inline-block;
+// 			a{
+// 				width: 58%;
+// 				margin-left: 2%;
+// 			}
+//
+// 			#aHome{
+// 				margin-top: -35%;
+// 			}
+//
+// 			#aWeb{
+// 				margin-left: -20%;
+// 			}
+//
+// 			#aGames{
+//
+// 			}
+//
+// 			#aAbout{
+// 				width: 120%;
+// 			}
+// 		}
+// 	}
+//
+//     @media screen and (min-width: 40.5rem){
+// 		a{
+// 			margin-left: 7.5%;
+// 		}
+//
+//     	#bottomItem{
+//     		margin-bottom: 160%;
+//     	}
+//     }
+//
+// }

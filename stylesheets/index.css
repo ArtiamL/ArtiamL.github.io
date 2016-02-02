@@ -10,12 +10,12 @@ img {
   max-width: 100%;
 }
 
-header {
+.header {
   position: relative;
   z-index: 0;
   height: 100vh;
   width: 100%;
-  background: #131e2b;
+  background: #161717;
   background-image: radial-gradient(#3B3B3B 25%, #2C2F31 50%, #161717 75%, #10100D 100%);
   background-size: cover;
   background-position: center;
@@ -25,23 +25,23 @@ header {
   align-items: center;
   justify-content: center;
 }
-header .initMessage {
+.header .initMessage {
   color: white;
   font-size: 3rem;
   display: none;
 }
-header hr {
+.header hr {
   border: 1px solid #9E1E11;
   width: 10rem;
   margin-bottom: 0.625rem;
 }
-header .about {
+.header .about {
   font-size: 1.25rem;
   width: 90%;
   margin: 0 auto;
   text-align: justify;
 }
-header .about .csharp {
+.header .about .csharp {
   color: #FFA400;
 }
 
@@ -51,33 +51,4 @@ header .about .csharp {
   margin: 0 auto;
   text-align: justify;
   margin-bottom: 1rem;
-}
-
-#angularName {
-  position: center;
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: column;
-  flex-direction: -webkit-column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 1.5rem;
-  color: #333;
-}
-#angularName h1 {
-  font-size: 2rem;
-}
-#angularName hr {
-  border: 0;
-  border-top: 1px solid #ecf0f1;
-  border-bottom: 1px solid #ecf0f1;
-}
-#angularName input {
-  height: 1.5rem;
-  min-width: inherit;
-  padding-left: 0.5rem;
-  font-size: 0.5rem;
-  border-radius: 3px;
-  border: 1px solid #cccccc;
 }
