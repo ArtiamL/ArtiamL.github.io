@@ -81,12 +81,12 @@ function redirectPage(){
 }
 
 //Kinda obvious...
-$(document).ready(function(){
+$(function(){
 	// menuToggle();
 
 	$('#menuIcon').click(menuToggle);
 
-	$(document).keydown(function(e){
+	$(document).keyup(function(e){
 		if(e.which == 77 || e.which == 27){
 			menuToggle();
 		}

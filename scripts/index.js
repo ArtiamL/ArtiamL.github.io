@@ -7,5 +7,5 @@
 */
 
 $(document).ready(function(){
-    $('.initMessage, .about').css({display: "flex"}).hide().fadeIn(1500);
+    $('.initMessage, .about').fadeIn(1500).css({display: "flex"});
 });
