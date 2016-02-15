@@ -84,19 +84,29 @@ function redirectPage(){
 $(function(){
 	// menuToggle();
 
-	$('#menuIcon').click(menuToggle);
+	// $('#menuIcon').click(menuToggle);
 
-	$(document).keyup(function(e){
-		if(e.which == 77 || e.which == 27){
-			menuToggle();
+	// $(document).keyup(function(e){
+	// 	if(e.which == 77 || e.which == 27){
+	// 		menuToggle();
+	// 	}
+	// });
+
+	// $('a li.menuItems').click(function(e){
+	// 	e.preventDefault();
+	// 	linkLocation = this.href;
+	// 	menuToggle();
+	// 	window.setTimeout(redirectPage, 500);
+	// });
+
+	$('a[href^="#"]').on('click', function(e){
+		var target = $( $(this).attr('href') );
+
+		if (target.length) {
+			e.preventDefault();
+			$('html, body').animate({
+				scrollTop: target.offset().top
+			}, 1000);
 		}
 	});
-
-	$('a li.menuItems').click(function(e){
-		e.preventDefault();
-		linkLocation = this.href;
-		menuToggle();
-		window.setTimeout(redirectPage, 500);
-	});
-
 });

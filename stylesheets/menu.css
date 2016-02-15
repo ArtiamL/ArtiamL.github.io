@@ -5,13 +5,20 @@
         Updated By: Luke Newell (@Myzostal)
 		Updated: 01/11/2015
 */
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
 * {
   padding: 0;
   margin: 0;
   color: white;
   overflow-x: hidden;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 300;
+}
+
+::selection {
+  color: #9CA3A3;
+  background: #3F444A;
 }
 
 body {
@@ -23,41 +30,22 @@ a {
   color: inherit;
 }
 
-#menuIcon {
-  min-width: 3rem;
-  min-height: 2rem;
-  margin: 1.5rem;
-  z-index: 2000;
-  position: absolute;
-  cursor: pointer;
-}
-#menuIcon .menuLines {
-  background-color: #9E1E11;
-  width: 3rem;
-  height: 0.2rem;
-  -webkit-transform-origin: left;
-  transform-origin: left;
-}
-#menuIcon #line2, #menuIcon #line3 {
-  margin-top: 5px;
-}
-#menuIcon #line2 {
-  height: 0.19rem;
-}
-#menuIcon #line3 {
-  height: 0.19rem;
-}
-
 .menu {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .menu .menuItems {
+  display: inline-block;
   font-size: 1.5rem;
+  color: #46607D;
 }
-.menu #games, .menu #about {
-  float: right;
-  margin-top: -2.1rem;
+.menu #break {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

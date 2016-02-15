@@ -6,18 +6,25 @@
 		Updated: 01/11/2015
 */
 
-$backgroundColor: whitesmoke;//#ecf0f1;
-$menuLinesColor: #9E1E11; //#ffcc00; //#FFA400; //#9E1E11; //#38201E; //#1A1F29;
-// $menuItemsBack: #202633;
-$menuBackground: #131e2b;
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+
+$backgroundColor: whitesmoke;
+$menuLinesColor: #46607D;
+// $menuBackground: #131e2b;
 
 *{
 	padding: 0;
 	margin: 0;
 	color: white;
 	overflow-x: hidden;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
+}
+
+::selection{
+	color: #9CA3A3;
+	background: #3F444A;
 }
 
 body{
@@ -29,122 +36,49 @@ a{
 	color: inherit;
 }
 
-#menuIcon{
-	min-width: 3rem;
-	min-height: 2rem;
-	margin: 1.5rem;
-	z-index: 2000;
-	position: absolute;
-	cursor: pointer;
-
-    .menuLines{
-    	background-color: $menuLinesColor;
-    	width: 3rem;
-    	height: 0.2rem;
-    	-webkit-transform-origin: left;
-    	transform-origin: left;
-    }
-
-    #line2, #line3{
-    	margin-top: 5px;
-    }
-
-    #line2{
-    	height: 0.19rem;
-    }
-
-    #line3{
-    	height: 0.19rem;
-    }
-}
+// #menuIcon{
+// 	min-width: 3rem;
+// 	min-height: 2rem;
+// 	margin: 1.5rem;
+// 	z-index: 2000;
+// 	position: absolute;
+// 	cursor: pointer;
+//
+//     .menuLines{
+//     	background-color: $menuLinesColor;
+//     	width: 3rem;
+//     	height: 0.2rem;
+//     	-webkit-transform-origin: left;
+//     	transform-origin: left;
+//     }
+//
+//     #line2, #line3{
+//     	margin-top: 5px;
+//     }
+//
+//     #line2{
+//     	height: 0.19rem;
+//     }
+//
+//     #line3{
+//     	height: 0.19rem;
+//     }
+// }
 
 .menu{
-	display: none;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	position: absolute;
+	top: 1rem; left: 0; right: 0; bottom: 0;
 
 	.menuItems{
+		display: inline-block;
 		font-size: 1.5rem;
+		color: $menuLinesColor;
 	}
 
-	#games, #about{
-		float: right;
-		margin-top: -2.1rem; //margin-left: -0.5rem;
-		// display: inline-flex;
+	#break{
+		padding-left: 1rem; padding-right: 1rem;
 	}
 }
-
-// .menu{
-// 	background: $menuBackground;
-// 	height: 101vh;
-// 	width: 100%;
-// 	position: fixed;
-// 	overflow: hidden;
-// 	z-index: 1000;
-// 	display: none;
-//
-// 	#home{
-// 		margin-top: 20%;
-// 	}
-//
-//     .menuItems{
-// 		// display: block;
-//
-// 		a{
-// 			// display: block;
-// 			padding: 1rem;
-// 			color: white; //#4B5975;
-// 			background-color: $menuLinesColor;
-// 	    	font-size: 2.5rem;
-// 	    	font-weight: 300;
-// 			width: 84%;
-// 			margin-top: 4%;
-// 			margin-left: auto; margin-right: auto;
-// 	    	transition: 250ms;
-// 		}
-//
-// 		#desc{
-// 			font-size: 1.25rem;
-// 			opacity: 0.5;
-// 		}
-//     }
-//
-// 	@media screen and (orientation: landscape) {
-// 		// overflow: scroll;
-// 		.menuItems{
-// 			display: inline-block;
-// 			a{
-// 				width: 58%;
-// 				margin-left: 2%;
-// 			}
-//
-// 			#aHome{
-// 				margin-top: -35%;
-// 			}
-//
-// 			#aWeb{
-// 				margin-left: -20%;
-// 			}
-//
-// 			#aGames{
-//
-// 			}
-//
-// 			#aAbout{
-// 				width: 120%;
-// 			}
-// 		}
-// 	}
-//
-//     @media screen and (min-width: 40.5rem){
-// 		a{
-// 			margin-left: 7.5%;
-// 		}
-//
-//     	#bottomItem{
-//     		margin-bottom: 160%;
-//     	}
-//     }
-//
-// }

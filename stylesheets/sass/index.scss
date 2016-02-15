@@ -6,7 +6,7 @@
 		Updated: 01/11/2015
 */
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 img{
 	max-width: 100%;
@@ -22,30 +22,32 @@ img{
 	// background-image: linear-gradient(#3B3B3B top 25%, #2C2F31 50%, #161717 75%, #10100D 100%);
 	background-size: cover;
 	background-position: center;
-	margin-bottom: 8%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 
 	.initMessage{
-		color: white;
+		// color: #5A8897;
 		// background: -webkit-linear-gradient(top, #008080, #fff);
 		// -webkit-background-clip: text;
 		// -webkit-text-fill-color: transparent;
+		font-family: 'Oswald', sans-serif;
 		font-size: 3rem;
 		display: none;
 	}
 
 	hr{
-		border: 1px solid #9E1E11;
+		border: 1px solid #46607D;
 		width: 10rem;
 		margin-bottom: 0.625rem;
 	}
 
 	.about{
 		display: none;
+		font-family: 'Lato', sans-serif;
 		font-size: 1.25rem;
+		// color: #5A8897;
 		width: 90%;
 		margin: 0 auto;
 		text-align: justify;
@@ -54,6 +56,11 @@ img{
 			color: #FFA400;
 		}
 	}
+}
+
+#text{
+	position: absolute;
+	padding-top: 8%;
 }
 
 .text{
