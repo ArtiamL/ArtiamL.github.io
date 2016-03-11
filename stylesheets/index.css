@@ -22,20 +22,23 @@
   border: 2px solid #fff;
   border-radius: 25%;
 }
-.header .initMessage {
+
+.title {
   display: none;
   font-size: 3rem;
   font-style: italic;
   padding-left: 0.35rem;
   padding-right: 0.35rem;
 }
-.header hr {
+
+.lineBreak {
   display: none;
   border: 1px solid #5F6363;
   width: 10rem;
   margin-bottom: 0.625rem;
 }
-.header .bio {
+
+.info {
   display: none;
   font-family: 'Roboto Condensed', sans-serif;
 }
