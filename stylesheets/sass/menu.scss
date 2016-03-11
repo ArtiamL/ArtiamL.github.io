@@ -7,17 +7,17 @@
 */
 
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+// @import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 
 $backgroundColor: whitesmoke;
-$menuLinesColor: #46607D;
+$menuLinesColor: #5F6363; //#46607D;
 // $menuBackground: #131e2b;
 
 *{
 	padding: 0;
 	margin: 0;
 	color: white;
-	overflow-x: hidden;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
 }
@@ -27,13 +27,46 @@ $menuLinesColor: #46607D;
 	background: #3F444A;
 }
 
-body{
+html, body{
+	height: 105vh;
+	position: relative;
+	overflow: hidden;
 	background: $backgroundColor;
+	background: #161717;
 }
 
 a{
 	text-decoration: none;
 	color: inherit;
+}
+
+img{
+	// max-width: 100%; max-height: 100%;
+}
+
+.menu{
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	// z-index: 1000;
+	top: 93vh; left: 0; right: 0; bottom: 0;
+
+	#menuList{
+		border: 2px solid $menuLinesColor;
+		padding: 0.5rem;
+	}
+
+	.menuItems{
+		display: inline-block;
+		font-size: 1.5rem;
+		color: $menuLinesColor;
+	}
+
+	#about::before, #projects::before, #contact::before{
+		content: "|";
+		padding-left: 0.5rem; padding-right: 0.5rem;
+	}
 }
 
 // #menuIcon{
@@ -64,21 +97,3 @@ a{
 //     	height: 0.19rem;
 //     }
 // }
-
-.menu{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: absolute;
-	top: 1rem; left: 0; right: 0; bottom: 0;
-
-	.menuItems{
-		display: inline-block;
-		font-size: 1.5rem;
-		color: $menuLinesColor;
-	}
-
-	#break{
-		padding-left: 1rem; padding-right: 1rem;
-	}
-}

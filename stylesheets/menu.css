@@ -6,12 +6,11 @@
 		Updated: 01/11/2015
 */
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 * {
   padding: 0;
   margin: 0;
   color: white;
-  overflow-x: hidden;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
 }
@@ -21,8 +20,12 @@
   background: #3F444A;
 }
 
-body {
+html, body {
+  height: 105vh;
+  position: relative;
+  overflow: hidden;
   background: whitesmoke;
+  background: #161717;
 }
 
 a {
@@ -31,21 +34,26 @@ a {
 }
 
 .menu {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 1rem;
+  top: 93vh;
   left: 0;
   right: 0;
   bottom: 0;
 }
+.menu #menuList {
+  border: 2px solid #5F6363;
+  padding: 0.5rem;
+}
 .menu .menuItems {
   display: inline-block;
   font-size: 1.5rem;
-  color: #46607D;
+  color: #5F6363;
 }
-.menu #break {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.menu #about::before, .menu #projects::before, .menu #contact::before {
+  content: "|";
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }

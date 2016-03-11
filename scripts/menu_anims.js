@@ -99,14 +99,76 @@ $(function(){
 	// 	window.setTimeout(redirectPage, 500);
 	// });
 
+	$('.menu').fadeIn(2000).css({display: 'flex'});
+
+	$('#home').hover({
+		// $(this).animate({color: ''});
+	});
+
+	$('#aAbout').hover(function(){
+		$(this).stop().animate({color: '#002633'});
+		$('#menuList').stop().animate({borderColor: '#002633'});
+	}, function(){
+		$(this).stop().animate({color: '#5F6363'});
+		$('#menuList').stop().animate({borderColor: '#5F6363'});
+	});
+
+	$('#aProjects').hover(function(){
+		$(this).stop().animate({color: '#63211A'});
+		$('#menuList').stop().animate({borderColor: '#63211A'});
+	}, function(){
+		$(this).stop().animate({color: '#5F6363'});
+		$('#menuList').stop().animate({borderColor: '#5F6363'});
+	});
+
 	$('a[href^="#"]').on('click', function(e){
-		var target = $( $(this).attr('href') );
+		var target = $( $(this).attr('href') ),
+			parent = $( $(this).parent().parent().parent().parent().get() ),
+			parentBG = parent.css('background'),
+			targetBG = target.css('background');
+
+		// if (target.length) {
+		// 	e.preventDefault();
+		// 	$('html, body').animate({
+		// 		scrollTop: target.offset().top
+		// 	}, 1000);
+		// }
+
+		// if (target.length) {
+		// 	e.preventDefault();
+		// 	$('body').animate({
+		// 		top: '-=105vh'
+		// 	}, 1000);
+		// }
 
 		if (target.length) {
 			e.preventDefault();
-			$('html, body').animate({
-				scrollTop: target.offset().top
-			}, 1000);
+
+			console.log(target);
+			console.log(parent);
+
+			if (target == parent) {
+				parent.effect("bounce", {times:2}, "slow");
+			} else {
+				target.animate({
+					top: '-=105vh'
+				}, 1000);
+				// target.zIndex(10);
+
+				parent.animate({
+					top: '+=105vh'
+				}, 1000);
+				// parent.zIndex(5);
+
+				// $('body').css({
+				// 	background: parentBG
+				// });
+			}
 		}
 	});
+
+	// $(window).resize(function(e){
+	// 	e.preventDefault();
+	// 	console.log($(window).scrollTop());
+	// });
 });

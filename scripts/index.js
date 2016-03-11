@@ -7,5 +7,5 @@
 */
 
 $(document).ready(function(){
-    $('.initMessage, .about').fadeIn(1500).css({display: "flex"});
+    $('.initMessage, .bio, hr').fadeIn(1500).css({display: "flex"});
 });

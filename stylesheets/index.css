@@ -5,43 +5,66 @@
         Updated By: Luke Newell (@Myzostal)
 		Updated: 01/11/2015
 */
-img {
-  max-width: 100%;
-}
-
 .header {
-  position: relative;
+  position: absolute;
   z-index: 0;
-  height: 100vh;
+  height: 105vh;
   width: 100%;
   background: #161717;
-  background-size: cover;
-  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+.header #profpic {
+  height: 7.5rem;
+  width: 7.5rem;
+  border: 2px solid #fff;
+  border-radius: 25%;
+}
 .header .initMessage {
-  font-family: 'Oswald', sans-serif;
-  font-size: 3rem;
   display: none;
+  font-size: 3rem;
+  font-style: italic;
+  padding-left: 0.35rem;
+  padding-right: 0.35rem;
 }
 .header hr {
-  border: 1px solid #46607D;
+  display: none;
+  border: 1px solid #5F6363;
   width: 10rem;
   margin-bottom: 0.625rem;
 }
-.header .about {
+.header .bio {
   display: none;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.25rem;
-  width: 90%;
-  margin: 0 auto;
-  text-align: justify;
+  font-family: 'Roboto Condensed', sans-serif;
 }
-.header .about .csharp {
-  color: #FFA400;
+
+.about {
+  position: absolute;
+  top: 105vh;
+  height: 105vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #002633;
+}
+.about h2 {
+  font-size: 2rem;
+}
+
+.projects {
+  position: absolute;
+  top: 105vh;
+  height: 105vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #63211A;
 }
 
 #text {
