@@ -10,7 +10,7 @@
 
 .header{
 	position: absolute;
-	z-index: 0;
+	z-index: 1;
 	// color: white;
 	height: 105vh; width: 100%;
 	background: #161717;
@@ -51,26 +51,26 @@
 }
 
 .title{
-	display: none;
-	font-size: 3rem; font-style: italic;
+	// display: flex;
+	font-size: 2.5rem; font-style: italic;
 	padding-left: 0.35rem; padding-right: 0.35rem;
 	// color: #f35626;
-	// background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+	// background: -webkit-linear-gradient(top, #f35626 0%, #feab3a 100%);
 	// -webkit-background-clip: text;
 	// -webkit-text-fill-color: transparent;
 	// border: 1px solid white;
 }
 
 .lineBreak{
-	display: none;
+	// display: flex;
 	border: 1px solid #5F6363; //#46607D;
 	width: 10rem;
 	margin-bottom: 0.625rem;
 }
 
 .info{
-	display: none;
-	font-family: 'Roboto Condensed', sans-serif;
+	// display: inline-flex;
+	font-family: 'Lato', sans-serif; font-size: 1rem;
 }
 
 .about{
@@ -90,7 +90,7 @@
 
 .projects{
 	position: absolute;
-	top: 105vh;
+	top: 210vh;
 	height: 105vh; width: 100%;
 	display: flex;
 	flex-direction: column;

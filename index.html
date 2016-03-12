@@ -21,14 +21,14 @@
 		<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0-beta1.js"></script>
 		<!-- <script type="text/javascript" src="./node_modules/jquery/dist/jquery.js"></script> -->
-		<!--<script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+		<script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<!--<script type="text/javascript" src="bower_components/dist/jquery-min.js"></script>-->
 		<script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="http://hammerjs.github.io/dist/hammer.min.js"></script>
 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 
-		<script type="text/javascript" src="scripts/menu_anims.js"></script>
+		<script type="text/javascript" src="scripts/main_anims.js"></script>
 		<script type="text/javascript" src="scripts/index.js">
 
 		</script>
@@ -36,21 +36,12 @@
 
 	<body>
 
-		<!-- <div id="menuIcon">
-			<div class="menuLines" id="line1"></div>
-			<div class="menuLines" id="line2"></div>
-			<div class="menuLines" id="line3"></div>
-		</div> -->
-
 			<!-- <footer id="copyright">
 				<p>&copy; 2015 Luke Newell</p>
 				<p>All rights reserved</p>
 			</footer> -->
 
-		<header class="header" id="header">
-			<!-- <div id="profpic">
-			</div> -->
-				<!-- <img src="./images/profpic.jpg" /> -->
+		<div class="menuParent">
 			<div class="menu">
 				<ul id="menuList">
 					<li class="menuItems" id="home">
@@ -77,6 +68,20 @@
 					</li> -->
 				</ul>
 			</div>
+		</div>
+
+			<div class="menuContainer">
+				<div id="menuIcon">
+					<div class="menuLines" id="line1"></div>
+					<div class="menuLines" id="line2"></div>
+					<div class="menuLines" id="line3"></div>
+				</div>
+			</div>
+
+		<header class="header" id="header">
+			<!-- <div id="profpic">
+			</div> -->
+				<!-- <img src="./images/profpic.jpg" /> -->
 
 			<!-- <h1 class="initMessage">
 				Hello, World!
@@ -87,49 +92,16 @@
 			<!-- <p class="about">
 				Hi, I'm Luke. A 16 year old Software Developer from the United Kingdom. I'm also a Web Developer of two years and have experiences in multiple different Website and Software Development Languages, most notably C#.
 			</p> -->
+
 		</header>
 
 		<div class="about" id="aboutMe">
-			<div class="menu">
-				<ul id="menuList">
-					<li class="menuItems" id="home">
-						<a href="#header" id="aHome">Home</a>
-					</li>
-					<li class="menuItems" id="about">
-						<a href="#aboutMe" id="aAbout">About</a>
-					</li>
-					<li class="menuItems" id="projects">
-						<a href="#myProjects" id="aProjects">My Projects</a>
-					</li>
-					<li class="menuItems" id="contact">
-						<a href="#" id="aContact">Contact</a>
-					</li>
-				</ul>
-			</div>
 			<h1 class="title">About Me</h1>
 			<hr class="lineBreak">
-			<p class="info">
-				I'm Luke, a Web Developer and Software Developer of 2 years.
-			</p>
+			<p class="info">I'm Luke, a Web Developer and Software Developer of 2 years.</p>
 		</div>
 
 		<div class="projects" id="myProjects">
-			<div class="menu">
-				<ul id="menuList">
-					<li class="menuItems" id="home">
-						<a href="#header" id="aHome">Home</a>
-					</li>
-					<li class="menuItems" id="about">
-						<a href="#aboutMe" id="aAbout">About</a>
-					</li>
-					<li class="menuItems" id="projects">
-						<a href="#myProjects" id="aProjects">My Projects</a>
-					</li>
-					<li class="menuItems" id="contact">
-						<a href="#" id="aContact">Contact</a>
-					</li>
-				</ul>
-			</div>
 		</div>
 
 	</body>

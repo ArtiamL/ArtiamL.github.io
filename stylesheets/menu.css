@@ -5,13 +5,13 @@
         Updated By: Luke Newell (@Myzostal)
 		Updated: 01/11/2015
 */
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Bad+Script);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
 * {
   padding: 0;
   margin: 0;
   color: white;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Bad Script', cursive;
   font-weight: 300;
 }
 
@@ -21,11 +21,12 @@
 }
 
 html, body {
-  height: 105vh;
-  position: relative;
-  overflow: hidden;
   background: whitesmoke;
   background: #161717;
+}
+
+li {
+  list-style: none;
 }
 
 a {
@@ -33,27 +34,55 @@ a {
   color: inherit;
 }
 
-.menu {
+.menuParent {
   display: none;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  top: 93vh;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.5);
 }
-.menu #menuList {
-  border: 2px solid #5F6363;
+.menuParent .menu {
+  flex-direction: column;
+  align-items: center;
+  width: 87.5%;
+  background: #0D404A;
+}
+.menuParent .menu #menuList {
+  width: 100%;
   padding: 0.5rem;
 }
-.menu .menuItems {
-  display: inline-block;
-  font-size: 1.5rem;
-  color: #5F6363;
+.menuParent .menu .menuItems {
+  width: 100%;
+  text-align: center;
+  font-size: 1.25rem;
+  color: white;
 }
-.menu #about::before, .menu #projects::before, .menu #contact::before {
-  content: "|";
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+
+.menuContainer {
+  position: fixed;
+  top: 90vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menuContainer #menuIcon {
+  cursor: pointer;
+}
+.menuContainer #menuIcon .menuLines {
+  background-color: #5F6363;
+  width: 2rem;
+  height: 0.1rem;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+}
+.menuContainer #menuIcon #line2, .menuContainer #menuIcon #line3 {
+  margin-top: 0.3125rem;
 }
