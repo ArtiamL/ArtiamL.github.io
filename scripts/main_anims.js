@@ -29,6 +29,10 @@ function openMenu(){
 	});
 
 	$('.menuParent').fadeIn(500).css({display: "flex"});
+	$('#menuIcon').css({
+		height: '1.5rem',
+		width: '1.5rem'
+	});
 
 	// $('.initMessage, .about, hr').fadeOut(function(){
 	// 	// $('.menu').fadeIn(500);
@@ -60,6 +64,10 @@ function closeMenu(){
 	});
 
 	$('.menuParent').fadeOut(500);
+	$('#menuIcon').css({
+		height: '0.925rem',
+		width: '2rem'
+	});
 
 	// $('.menu').fadeOut(function(){
 	// 	$('.initMessage, .about, hr').fadeIn(500);
@@ -121,69 +129,6 @@ $(function(){
 
 	$('.menu').fadeIn(2000).css({display: 'flex'});
 
-	// $('#home').hover({
-	// 	// $(this).animate({color: ''});
-	// });
-	//
-	// $('#aAbout').hover(function(){
-	// 	$(this).stop().animate({color: '#002633'});
-	// 	$('#menuList').stop().animate({borderColor: '#002633'});
-	// }, function(){
-	// 	$(this).stop().animate({color: '#5F6363'});
-	// 	$('#menuList').stop().animate({borderColor: '#5F6363'});
-	// });
-	//
-	// $('#aProjects').hover(function(){
-	// 	$(this).stop().animate({color: '#63211A'});
-	// 	$('#menuList').stop().animate({borderColor: '#63211A'});
-	// }, function(){
-	// 	$(this).stop().animate({color: '#5F6363'});
-	// 	$('#menuList').stop().animate({borderColor: '#5F6363'});
-	// });
-
 	$('a[href^="#"]').on('touchstart', linkScroll);
 	$('a[href^="#"]').on('click', linkScroll);
-		// 	parent = $( $(this).parent().parent().parent().parent().get() ),
-		// 	parentBG = parent.css('background'),
-		// 	targetBG = target.css('background');
-
-
-
-		// if (target.length) {
-		// 	e.preventDefault();
-		// 	$('body').animate({
-		// 		top: '-=105vh'
-		// 	}, 1000);
-		// }
-
-		// if (target.length) {
-		// 	e.preventDefault();
-		//
-		// 	console.log(target);
-		// 	console.log(parent);
-		//
-		// 	if (target == parent) {
-		// 		parent.effect("bounce", {times:2}, "slow");
-		// 	} else {
-		// 		target.animate({
-		// 			top: '-=105vh'
-		// 		}, 1000);
-		// 		// target.zIndex(10);
-		//
-		// 		parent.animate({
-		// 			top: '+=105vh'
-		// 		}, 1000);
-		// 		// parent.zIndex(5);
-		//
-		// 		$('body').css({
-		// 			background: targetBG
-		// 		});
-		// 	}
-		// }
-
-
-	// $(window).resize(function(e){
-	// 	e.preventDefault();
-	// 	console.log($(window).scrollTop());
-	// });
 });
