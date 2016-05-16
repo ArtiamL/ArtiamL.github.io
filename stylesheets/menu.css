@@ -20,7 +20,6 @@
 }
 
 html, body {
-  background: whitesmoke;
   background: #161717;
 }
 
@@ -48,7 +47,7 @@ a {
   flex-direction: column;
   align-items: center;
   width: 87.5%;
-  background: #002633;
+  background: #fff;
 }
 .menuParent .menu #menuList {
   width: 100%;
@@ -58,7 +57,7 @@ a {
   width: 100%;
   text-align: center;
   font-size: 1.25rem;
-  color: white;
+  color: #5F6363;
 }
 
 .iconContainer {

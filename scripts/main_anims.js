@@ -30,8 +30,13 @@ function openMenu(){
 
 	$('.menuParent').fadeIn(500).css({display: "flex"});
 	$('#menuIcon').css({
-		height: '1.5rem',
-		width: '1.5rem'
+		height: '1.5rem'
+	});
+
+	$('.content').css({
+		'-webkit-filter': 'blur(3px)',
+		filter: 'blur(2px)',
+		transition: '500ms'
 	});
 
 	// $('.initMessage, .about, hr').fadeOut(function(){
@@ -65,8 +70,13 @@ function closeMenu(){
 
 	$('.menuParent').fadeOut(500);
 	$('#menuIcon').css({
-		height: '0.925rem',
-		width: '2rem'
+		height: '0.925rem'
+	});
+
+	$('.content').css({
+		'-webkit-filter': '',
+		filter: '',
+		transition: '500ms'
 	});
 
 	// $('.menu').fadeOut(function(){
@@ -125,6 +135,10 @@ $(function(){
 	// 	linkLocation = this.href;
 	// 	menuToggle();
 	// 	window.setTimeout(redirectPage, 500);
+	// });
+
+	// $('html').on('contextmenu', function(e){
+	// 	e.preventDefault();
 	// });
 
 	$('.menu').fadeIn(2000).css({display: 'flex'});
