@@ -35,7 +35,9 @@ function openMenu(){
 
 	$('.content').css({
 		'-webkit-filter': 'blur(3px)',
-		filter: 'blur(2px)',
+		'-moz-filter': 'blur(3px)',
+		'-ms-filter': 'blur(3px)',
+		filter: 'blur(3px)',
 		transition: '500ms'
 	});
 
@@ -75,6 +77,8 @@ function closeMenu(){
 
 	$('.content').css({
 		'-webkit-filter': '',
+		'-moz-filter': '',
+		'-ms-filter': '',
 		filter: '',
 		transition: '500ms'
 	});
